@@ -774,4 +774,9 @@ iLen=1024
 
 
 ## RESULT:
-Thus, Implementation of sum arrays on host and device is done in nvcc cuda using random number.
+
+When ilen = 256, the GPU uses 65,536 blocks with 256 threads per block.<br>
+When ilen = 512, the GPU uses 32,768 blocks with 512 threads per block.<br>
+When ilen = 1024, the GPU uses 16,384 blocks with 1,024 threads per block.<br>
+The GPU execution time decreases from 0.001143 seconds to 0.000908 seconds.<br>
+All three tested configurations produce correct results, verified by Arrays match.
